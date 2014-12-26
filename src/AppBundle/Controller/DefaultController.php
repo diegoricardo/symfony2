@@ -12,13 +12,10 @@ class DefaultController extends Controller
      */
     public function runAction($marca, $modelo)
     {
-        $marca = strtoupper($marca);
-        $modelo = strtoupper($modelo);
-
         return $this->render('AppBundle:Default:run.html.twig', [
-        		'marca' => $marca,
-        		'modelo' => $modelo
-        	]
-    	);
+            'marca' => $marca,
+            'modelo' => $modelo,
+        ]
+        );
     }
 }
