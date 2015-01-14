@@ -1,0 +1,20 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Lista de Modelos Disponíveis{% endblock %}
+
+{% block body %}
+<h1>Marcas disponíveis</h1>
+<ul id="marcas">
+    {% for marca in marcas %}
+        <li>{{ marca }}</li>
+    {% endfor %}
+</ul>
+
+<h1>Modelos disponíveis</h1>
+<ul id="modelos">
+    {% for modelo in modelos %}
+        <li>{{ modelo }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
